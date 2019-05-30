@@ -14,9 +14,10 @@ npm install each-period
 import { each } from 'each-period'
 // TODO: describe usage
 
+each('month').inYear(2009).fromTheBegining().formatAs('MMM/YY')
 each('month').thisYear().formatAs('MMM/YY')
 each('month').nextYear().formatAs('MMM/YY')
-each(3, 'months').thisYear().formatAs('MMM/YY', 'MMM/YY', {prefix: 'TRI'})
+each('querter').thisYear().formatAs('MMM/YY', 'MMM/YY', {prefix: 'TRI'})
 
 ```
 
